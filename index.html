@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8">
+	<title>Калькулятор сложных процентов</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class = "describe">
+		<div class = "content">
+			<h1 class="calc_descr_title">Сложный процент</h1>
+			<div class = "calc_descr_text">
+				Сложный процент часто используется в сфере инвестиций и кредитования. 
+			</div>
+		</div>
+	</div>
+	<div class = "calc">
+		<div class = "calc_options">
+			<div class = "calc_options_item calc_options_item_saving-period">
+				<label class = "calc_options_label">Срок вклада</label>
+				<div class="calc_options_field calc_options_field_label-right" data-label="лет">
+					<input class="calc_options_input" id ="count" type="text" name="input" oninput = "monthly_profit()">
+				</div>
+			</div>
+			<div class = "calc_options_item calc_options_item_saving-initial-balance">
+				<label class="calc_options_label">Размер вклада</label>
+				<div class="calc_options_field calc_options_field_label-left" data-label="₽">
+					<input class="calc_options_input" id ="chislo" type="text" name="input" oninput = "monthly_profit()">
+				</div>
+			</div>
+			<div class="calc_options_item calc_options_item_saving-percent-yield">
+				<label class="calc_options_label">Процентная ставка</label>
+				<div class="calc_options_field calc_options_field_label-right" data-label="%">
+					<input class="calc_options_input" id ="procent" type="text" name="input" oninput = "monthly_profit()" use-decimals="">
+				</div>
+			</div>
+			<div class = "calc_options_item calc_options_item_saving-initial-balance">
+				<label class="calc_options_label">Годовая прибавка</label>
+				<div class="calc_options_field calc_options_field_label-left" data-label="₽">
+					<input class="calc_options_input" id="proc" type="text" name="input">
+				</div>
+			</div>
+			<div class="calc_options_item calc_options_item_saving-tax-rate">
+				<label class="calc_options_label">Налог (в %)</label>
+				<div class="calc_options_field calc_options_field_label-right" data-label="%">
+					<input class="calc_options_input" type="text" name="input" use-decimals="" id = "tax">
+				</div>
+			</div>
+			<div class="calc_options_item calc_options_item_saving-calculate-tax">
+				<label class="calc_options_label ">Рассчитать налоги?</label>
+				<div class="calc_options_field">
+					<label class="calc_options_radio-label calc_options_radio_label-circle">
+						Да
+						<input type="radio" name="choicetax" class="rbcircle" value="1" id = "yes">
+					</label> 
+					<label class="calc_options_radio-label calc_options_radio_label-circle">
+						Нет
+						<input type="radio" name="choicetax" class="rbcircle" value="0" id = "no" checked>
+					</label>
+				</div>
+			</div>
+			<div class="result">
+				<button class="result_button" onclick="func()">Посчитать</button>
+				<div class="calc_result calc_result_interest-calculator">
+					<div class="calc_result_row calc_result_row-header">
+						<div class="calc_result_column">Год</div> 
+						<div class="calc_result_column">Расчетная сумма</div>
+					</div>
+					<div class="calc_result_row">
+						<div class="calc_result_column"><span class = "rest" id="year"></span></div>
+						<div class="calc_result_column"><span class = "rest" id="res"></span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

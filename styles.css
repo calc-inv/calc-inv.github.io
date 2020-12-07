@@ -1,0 +1,225 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	font-family: Roboto, sans-serif;
+}
+button, input, select, textarea {
+    margin: 0;
+}
+.content{
+	max-width: 1170px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+.describe{
+	margin-bottom: 35px;
+    padding: 0 15px;
+}
+.calc_descr_title{
+	margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.calc_descr_text{
+	text-align: center;
+    color: #444;
+    max-width: 800px;
+    margin: auto;
+    font-weight: 400;
+}
+.calc{
+	padding: 0 0 50px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.calc_options{
+	display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    max-width: 410px;
+    margin: 0 auto 25px;
+    padding: 0 15px;
+}
+.calc_options_item{
+	display: inline-flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.calc_options_label{
+	margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.33;
+    color: #444;
+}
+.calc_options_input {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    border: 0;
+    font-size: 14px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    color: #000;
+}
+.calc_options_input:focus{
+    outline:none;
+}
+.calc_options_item_saving-period {
+    width: 192px;
+    margin-right: 19px;
+}
+.calc_options_field {
+    position: relative;
+    display: block;
+    border-radius: 5px;
+    border: solid 1px #dedede;
+    background-color: #fff;
+    overflow: hidden;
+}
+.calc_options_field:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    color: #444;
+}
+.calc_options_field_label-left {
+    padding-left: 30px;
+}
+.calc_options_field_label-left:before {
+    content: attr(data-label);
+    left: 0;
+}
+.calc_options_field_label-right{
+    padding-right: 30px;
+}
+.calc_options_field_label-right:before {
+    content: attr(data-label);
+    right: 0;
+}
+.calc_options_item_saving-monthly-contribution, .calc_options_item_saving-initial-balance {
+    width: 192px;
+}
+.calc_options_item_saving-percent-yield, .calc_options_item_saving-tax-rate{
+    width: 192px;
+    margin-right: 19px;
+}
+.calc_options_field_label-left .calc_options_input {
+    padding-left: 0;
+}
+.calc_options_field_label-right .calc_options_input {
+    padding-right: 0;
+}
+.calc_options_item_saving-calculate-tax .calc_options_field {
+    display: flex;
+    width: 116px;
+    height: 36px;
+    padding: 3px;
+    border-radius: 20px;
+    border: solid 1px #dedede;
+    background-color: #f4f6f7;
+}
+.calc_options_radio-label{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    border-right: 1px solid #dedede;
+    font-size: 12px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    text-align: center;
+    color: #000;
+    cursor: pointer;
+}
+.calc_options_radio_label-circle{
+	height: 100%;
+    border: 0;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    margin-left: 5px;
+}
+.rbcircle{
+    margin-left: 5px;
+}
+.result_button{
+    background-color: #2098ce;
+    color: #ffffff;
+    padding: 10px 40px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 2px solid #2098ce;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.result_button:hover{
+    background-color: #fbfbfb;
+    color: #2098ce;
+    border: 2px solid #2098ce;
+}
+.result_button:focus{
+    outline:none;
+}
+.result{
+    text-align: center;
+    width: 100%;
+    max-width: 730px;
+    margin: 0 auto;
+}
+.calc_result {
+    width: 100%;
+    max-width: 730px;
+    margin: 0 auto;
+}
+.calc_result_interest-calculator{
+    max-width: 440px;
+}
+.calc_result_row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e0e0e0;
+}
+.calc_result_column{
+    width: 25%;
+    font-size: 14px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    text-align: left;
+    color: #000;
+}
+.calc_result_row-header .calc_result_column{
+    font-weight: 600;
+    color: #999;
+    height: 30px;
+}
+.calc_result_interest-calculator .calc_result_column {
+    width: 50%;
+    text-align: center;
+}
+.rest{
+    line-height: 1.5;
+}
