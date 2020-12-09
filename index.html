@@ -21,31 +21,31 @@
 			<div class = "calc_options_item calc_options_item_saving-period">
 				<label class = "calc_options_label">Срок вклада</label>
 				<div class="calc_options_field calc_options_field_label-right" data-label="лет">
-					<input class="calc_options_input" id ="count" type="text" name="input" oninput = "monthly_profit()">
+					<input class="calc_options_input" id ="count" type="number" name="input" oninput = "monthly_profit()">
 				</div>
 			</div>
 			<div class = "calc_options_item calc_options_item_saving-initial-balance">
 				<label class="calc_options_label">Размер вклада</label>
 				<div class="calc_options_field calc_options_field_label-left" data-label="₽">
-					<input class="calc_options_input" id ="deposit" type="text" name="input" oninput = "monthly_profit()">
+					<input class="calc_options_input" id ="deposit" type="number" name="input" oninput = "monthly_profit()">
 				</div>
 			</div>
 			<div class="calc_options_item calc_options_item_saving-percent-yield">
 				<label class="calc_options_label">Процентная ставка</label>
 				<div class="calc_options_field calc_options_field_label-right" data-label="%">
-					<input class="calc_options_input" id ="percent" type="text" name="input" oninput = "monthly_profit()" use-decimals="">
+					<input class="calc_options_input" id ="percent" type="number" name="input" oninput = "monthly_profit()" use-decimals="">
 				</div>
 			</div>
 			<div class = "calc_options_item calc_options_item_saving-initial-balance">
 				<label class="calc_options_label">Годовая прибавка</label>
 				<div class="calc_options_field calc_options_field_label-left" data-label="₽">
-					<input class="calc_options_input" id="proc" type="text" name="input">
+					<input class="calc_options_input" id="proc" type="number" name="input">
 				</div>
 			</div>
 			<div class="calc_options_item calc_options_item_saving-tax-rate">
 				<label class="calc_options_label">Налог (в %)</label>
 				<div class="calc_options_field calc_options_field_label-right" data-label="%">
-					<input class="calc_options_input" type="text" name="input" use-decimals="" id = "tax">
+					<input class="calc_options_input" type="number" name="input" use-decimals="" id = "tax">
 				</div>
 			</div>
 			<div class="calc_options_item calc_options_item_saving-calculate-tax">
@@ -75,6 +75,9 @@
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class = "description">
+		Сложный (капитализированный) процент – это способ получения дохода по размещенному вкладу, при котором начисленные проценты прибавляются к изначальной сумме депозита. Таким образом увеличивается основная сумма, исходя из которой будут насчитаны последующие процентные выплаты. Данная схема начисления процентов на проценты называется капитализацией.
 	</div>
 </body>
 </html>

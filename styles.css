@@ -6,11 +6,6 @@ html, body{
 button, input, select, textarea {
     margin: 0;
 }
-.content{
-	max-width: 1170px;
-	padding: 0 20px;
-	margin: 0 auto;
-}
 .describe{
 	margin-bottom: 35px;
     padding: 0 15px;
@@ -64,6 +59,14 @@ button, input, select, textarea {
     font-style: normal;
     line-height: 1.14;
     color: #000;
+}
+input[type=number] {
+-moz-appearance:textfield; 
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 .calc_options_input:focus{
     outline:none;
@@ -221,5 +224,11 @@ button, input, select, textarea {
     text-align: center;
 }
 .rest{
+    line-height: 1.5;
+}
+.description{
+    font-size: 18px;
+    color: #444;
+    padding: 20px 30px;
     line-height: 1.5;
 }
